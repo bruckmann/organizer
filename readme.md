@@ -1,10 +1,8 @@
-
 # Organizer
 
-An app that helps you track and organize your daily tasks 
+An app that helps you track and organize your daily tasks
 
 ## Build
-
 
 Clone the project
 
@@ -33,8 +31,7 @@ Go to the build directory
 Run ninja
 
 ```bash
-	ninja
-	sudo ninja install
+	ninja && sudo ninja install
 ```
 
 And run
