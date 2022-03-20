@@ -32,10 +32,10 @@ public class Organizer.Window : Gtk.ApplicationWindow {
 
 		settings.set_int ("pos-x", x);
 		settings.set_int ("pos-y", y);
-		settings.set_int ("width", width);
-		settings.set_int ("height", height);
+		settings.set_int ("window-width", width);
+		settings.set_int ("window-height", height);
 
-    return true;
+    return false;
 	} 
 
 }
