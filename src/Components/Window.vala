@@ -9,17 +9,17 @@ public class Organizer.Window : Gtk.ApplicationWindow {
   }
 
   construct {
-    title = "Organizer";
-    set_default_size (800, 600);
+    set_default_size (1000, 3000);
     window_position = Gtk.WindowPosition.CENTER;
-
     settings = new GLib.Settings ("com.github.bruckmann.organizer");
     move (settings.get_int ("pos-x"), settings.get_int ("pos-y"));
     resize (settings.get_int ("window-width"), settings.get_int ("window-height"));
-		
 		delete_event.connect (e => {
-			return before_destroy();
+			return before_destroy ();
    });
+
+	 Organizer.HeaderBar header = new Organizer.HeaderBar ();
+	 set_titlebar (header);
 
     show_all ();
   }
